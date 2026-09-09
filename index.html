@@ -389,9 +389,57 @@ footer{padding:30px 0;color:#858b86;font-size:12px;text-align:center}
   .sportsday-title{font-size: 1.18rem;}
   .sportsday-desc{font-size: .88rem;}
 }
+</style><style>
+/* 스포츠데이 카드 모바일 잘림 수정 - 디자인 유지 */
+.sportsday-info-card{
+  aspect-ratio: auto !important;
+  min-height: 320px !important;
+}
+.sportsday-card-inner{
+  min-height: 320px !important;
+  padding: 22px 14px 20px !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+.sportsday-icon{
+  font-size: 2rem !important;
+  margin-bottom: 10px !important;
+}
+.sportsday-badge{
+  font-size: .72rem !important;
+  margin-bottom: 9px !important;
+  padding: 5px 10px !important;
+}
+.sportsday-title{
+  font-size: 1.12rem !important;
+  line-height: 1.35 !important;
+  margin-bottom: 10px !important;
+  word-break: keep-all !important;
+  white-space: normal !important;
+}
+.sportsday-desc{
+  max-width: 160px !important;
+  font-size: .82rem !important;
+  line-height: 1.5 !important;
+  word-break: keep-all !important;
+  white-space: normal !important;
+}
+@media (max-width: 560px){
+  .sportsday-info-card{min-height: 300px !important;}
+  .sportsday-card-inner{min-height:300px !important; padding:18px 10px 16px !important;}
+  .sportsday-title{font-size:1.02rem !important;}
+  .sportsday-desc{font-size:.78rem !important; max-width:145px !important;}
+}
+</style><style>
+/* 최종 로고 공통 적용 */
+img[src="gangneung-logo-final.jpg"]{
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #fff !important;
+}
 </style></head>
 <body>
-<header><div class="wrap nav"><a class="logo" href="#top"><img alt="강릉유치원 로고" class="site-logo" src="photo-01.png"/>🌱 강릉유치원</a><div class="navlinks"><a href="#why">특별한 배움</a><a href="#experience">다양한 경험</a><a href="#life">아이의 하루</a><a href="#visit">입학상담</a></div></div></header>
+<header><div class="wrap nav"><a class="logo" href="#top"><img alt="강릉유치원 로고" class="site-logo" src="gangneung-logo-final.jpg"/>🌱 강릉유치원</a><div class="navlinks"><a href="#why">특별한 배움</a><a href="#experience">다양한 경험</a><a href="#life">아이의 하루</a><a href="#visit">입학상담</a></div></div></header>
 <main id="top">
 <section class="hero"><div class="wrap heroGrid">
 <div><span class="badge">2027학년도 원아모집</span><h1>놀며 배우고,<br/><b>스스로 해내며</b>,<br/>함께 자랍니다.</h1><p>아이의 하루가 즐겁고, 그 즐거움이 배움으로 이어지는 곳. 강릉유치원은 아이마다 가진 속도와 가능성을 믿습니다.</p><div class="buttons"><a class="btn primary" href="#why">강릉유치원 알아보기</a><a class="btn secondary" href="#visit">입학상담 안내</a></div></div>
