@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>강릉유치원 | 2027학년도 원아모집</title>
 <style>
 @import url('https://cdn.jsdelivr.net/gh/innks/NanumSquareRound@master/nanumsquareround.min.css');
@@ -231,8 +232,20 @@ footer{padding:30px 0;color:#858b86;font-size:12px;text-align:center}
   }
 }
 
-</style>
 
+/* final revision: learning project */
+.learning-project-card{margin-top:18px;background:linear-gradient(145deg,#f7fbf4,#fffaf4);}
+.learning-project-card .project-intro{margin:2px 0 18px;color:#68746b;font-size:14px;}
+.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;}
+.project-item{background:#fff;border:1px solid #e7ebe5;border-radius:18px;padding:16px;min-height:154px;}
+.project-period{font-size:12px;font-weight:900;color:#6f8875;margin-bottom:5px;}
+.project-item h4{font-size:17px;margin:0 0 6px;color:#2f493a;}
+.project-item b{display:block;font-size:13px;margin-bottom:5px;color:#4c5e52;}
+.project-item p{font-size:12.5px;line-height:1.6;margin:0;color:#737c75;}
+.experience-subtitle{margin:-11px 0 15px;color:#758078;font-size:13px;font-weight:700;}
+@media(max-width:700px){.project-grid{grid-template-columns:1fr 1fr}.project-item{padding:13px;min-height:145px}.project-item h4{font-size:15px}.project-item p{font-size:11.5px}}
+@media(max-width:440px){.project-grid{grid-template-columns:1fr}.project-item{min-height:auto}}
+</style>
 <style>
 .experience-intro{margin:-8px 0 22px;color:#667169;line-height:1.75}
 .ending{min-height:72vh;background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:0!important;margin-top:50px}
@@ -240,7 +253,6 @@ footer{padding:30px 0;color:#858b86;font-size:12px;text-align:center}
 .ending .ctaBox{max-width:720px;margin:0 auto;background:rgba(32,57,45,.82);backdrop-filter:blur(4px);box-shadow:0 20px 60px rgba(0,0,0,.18)}
 @media(max-width:560px){.ending{min-height:62vh;background-position:center}.endingInner{padding:55px 0 28px}.ending .ctaBox{padding:25px 16px}.ending .ctaBox h2{font-size:27px}}
 </style>
-
 <style>
 /* Final ending: show the entire photo, then text below it */
 .ending-final{margin-top:50px;background:#f7f5ef;}
@@ -254,14 +266,11 @@ footer{padding:30px 0;color:#858b86;font-size:12px;text-align:center}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="logo" href="#top"><img class="site-logo" src="photo-01.png" alt="강릉유치원 로고">🌱 강릉유치원</a><div class="navlinks"><a href="#why">특별한 배움</a><a href="#experience">다양한 경험</a><a href="#life">아이의 하루</a><a href="#visit">입학상담</a></div></div></header>
-
+<header><div class="wrap nav"><a class="logo" href="#top"><img alt="강릉유치원 로고" class="site-logo" src="photo-01.png"/>🌱 강릉유치원</a><div class="navlinks"><a href="#why">특별한 배움</a><a href="#experience">다양한 경험</a><a href="#life">아이의 하루</a><a href="#visit">입학상담</a></div></div></header>
 <main id="top">
 <section class="hero"><div class="wrap heroGrid">
-<div><span class="badge">2027학년도 원아모집</span><h1>놀며 배우고,<br><b>스스로 해내며</b>,<br>함께 자랍니다.</h1><p>아이의 하루가 즐겁고, 그 즐거움이 배움으로 이어지는 곳. 강릉유치원은 아이마다 가진 속도와 가능성을 믿습니다.</p><div class="buttons"><a class="btn primary" href="#why">강릉유치원 알아보기</a><a class="btn secondary" href="#visit">입학상담 안내</a></div></div>
-
+<div><span class="badge">2027학년도 원아모집</span><h1>놀며 배우고,<br/><b>스스로 해내며</b>,<br/>함께 자랍니다.</h1><p>아이의 하루가 즐겁고, 그 즐거움이 배움으로 이어지는 곳. 강릉유치원은 아이마다 가진 속도와 가능성을 믿습니다.</p><div class="buttons"><a class="btn primary" href="#why">강릉유치원 알아보기</a><a class="btn secondary" href="#visit">입학상담 안내</a></div></div>
 </div></section>
-
 <section class="promise"><div class="wrap"><div class="promiseBox">
 <div class="motto">강릉유치원의 원훈 <b>믿음</b> · <b>소망</b> · <b>사랑</b></div>
 <div class="powers">
@@ -271,353 +280,306 @@ footer{padding:30px 0;color:#858b86;font-size:12px;text-align:center}
 <div class="power"><span>🔎</span><b>궁금해하는 힘</b><small>탐구 · 발견</small></div>
 <div class="power"><span>🌱</span><b>건강하게 살아가는 힘</b><small>신체 · 생활습관</small></div>
 </div></div></div></section>
-
-<section class="special" id="why"><div class="wrap"><div class="head"><div class="kicker">WHY GANGNEUNG KINDERGARTEN</div><h2>강릉유치원에서 매일 쌓이는<br>특별한 배움</h2><p>교육철학을 설명하는 데서 그치지 않고 아이들의 실제 하루 속 경험으로 이어갑니다.</p></div>
+<section class="special" id="why"><div class="wrap"><div class="head"><div class="kicker">WHY GANGNEUNG KINDERGARTEN</div><h2>강릉유치원에서 매일 쌓이는<br/>특별한 배움</h2><p>교육철학을 설명하는 데서 그치지 않고 아이들의 실제 하루 속 경험으로 이어갑니다.</p></div>
 <div class="specialGrid">
-<article class="specialCard"><div class="no">01 · AUTONOMY</div><h3>스스로 배우는 힘, 몬테소리</h3><p>스스로 선택하고 집중하고 끝까지 해보는 경험. 작은 성공이 쌓이며 자립심과 자신감이 자랍니다.</p><div class="photos"><div class="ph photoReal"><img class="realPhoto" src="photo-02.jpg" alt="몬테소리 활동 사진 1"></div><div class="ph photoReal"><img class="realPhoto" src="photo-03.jpg" alt="몬테소리 활동 사진 2"></div><div class="ph photoReal"><img class="realPhoto" src="photo-04.jpg" alt="몬테소리 활동 사진 3"></div></div></article>
-<article class="specialCard"><div class="no">02 · STORY</div><h3>이야기로 세상을 만나는 그림책</h3><p>매일 좋은 그림책을 만나 듣고, 상상하고, 질문하고 표현하며 생각의 세계를 넓혀 갑니다.</p><div class="photos"><div class="ph photoReal"><img class="realPhoto" src="photo-05.jpg" alt="그림책 활동 사진 1"></div><div class="ph photoReal"><img class="realPhoto" src="photo-06.jpg" alt="그림책 활동 사진 2"></div><div class="ph photoReal"><img class="realPhoto" src="photo-07.jpg" alt="그림책 활동 사진 3"></div></div></article>
-<article class="specialCard"><div class="no">03 · CHARACTER</div><h3>함께 하며 자라는 인성교육</h3><p>매월 경청, 정돈, 순종, 정직, 인내, 긍정, 책임감, 감사, 절제, 용서, 사랑의 품성을 기릅니다.</p><div class="photos"><div class="ph photoReal singleCharacter"><img class="realPhoto" src="photo-08.jpg" alt="생활 속에서 배우는 인성 활동 대표 사진"></div></div></article>
+<article class="specialCard"><div class="no">01 · AUTONOMY</div><h3>스스로 배우는 힘, 몬테소리</h3><p>스스로 선택하고 집중하고 끝까지 해보는 경험. 작은 성공이 쌓이며 자립심과 자신감이 자랍니다.</p><div class="photos"><div class="ph photoReal"><img alt="몬테소리 활동 사진 1" class="realPhoto" src="photo-02.jpg"/></div><div class="ph photoReal"><img alt="몬테소리 활동 사진 2" class="realPhoto" src="photo-03.jpg"/></div><div class="ph photoReal"><img alt="몬테소리 활동 사진 3" class="realPhoto" src="photo-04.jpg"/></div></div></article>
+<article class="specialCard"><div class="no">02 · STORY</div><h3>이야기로 세상을 만나는 그림책</h3><p>매일 좋은 그림책을 만나 듣고, 상상하고, 질문하고 표현하며 생각의 세계를 넓혀 갑니다.</p><div class="photos"><div class="ph photoReal"><img alt="그림책 활동 사진 1" class="realPhoto" src="photo-05.jpg"/></div><div class="ph photoReal"><img alt="그림책 활동 사진 2" class="realPhoto" src="photo-06.jpg"/></div><div class="ph photoReal"><img alt="그림책 활동 사진 3" class="realPhoto" src="photo-07.jpg"/></div></div></article>
+<article class="specialCard"><div class="no">03 · CHARACTER</div><h3>함께 하며 자라는 인성교육</h3><p>매월 경청, 정돈, 순종, 정직, 인내, 긍정, 책임감, 감사, 절제, 용서, 사랑의 품성을 기릅니다.</p><div class="photos"><div class="ph photoReal singleCharacter"><img alt="생활 속에서 배우는 인성 활동 대표 사진" class="realPhoto" src="photo-08.jpg"/></div></div></article>
+</div><article class="specialCard learning-project-card">
+<div class="no">04 · LEARNING PROJECT</div>
+<h3>배움 프로젝트</h3>
+<p class="project-intro"><b>놀이와 경험으로 자라는 1년, 배움 프로젝트</b><br/>두 달마다 새로운 주제를 만나 좋은 습관, 자연, 채소, 그림책, 예술, 지혜학교로 놀이와 체험 속에서 배워갑니다.</p>
+<div class="project-grid">
+<div class="project-item"><div class="project-period">3·4월 | 🌱</div><h4>습관학교</h4><b>좋은 습관으로 시작해요</b><p>정돈, 인사, 경청, 약속 등 유치원 생활에 필요한 좋은 습관을 익히며 스스로 생활하는 힘을 기릅니다.</p></div>
+<div class="project-item"><div class="project-period">5·6월 | 🌿</div><h4>자연학교</h4><b>자연을 만나고 발견해요</b><p>숲과 텃밭, 꽃과 곤충, 계절의 변화를 직접 관찰하고 경험하며 자연을 사랑하는 마음과 탐구하는 힘을 키웁니다.</p></div>
+<div class="project-item"><div class="project-period">7·8월 | 🥕</div><h4>채소학교</h4><b>건강한 먹거리를 경험해요</b><p>다양한 채소를 보고, 만지고, 기르고, 맛보며 건강한 식습관과 먹거리의 소중함을 배웁니다.</p></div>
+<div class="project-item"><div class="project-period">9·10월 | 📚</div><h4>그림책학교</h4><b>책 속에서 생각과 상상을 키워요</b><p>다양한 그림책을 만나 이야기, 놀이, 미술, 신체·표현 활동으로 확장하며 책 읽는 즐거움과 풍부한 상상력을 키웁니다.</p></div>
+<div class="project-item"><div class="project-period">11·12월 | 🎨</div><h4>예술학교</h4><b>느끼고, 표현하고, 함께 즐겨요</b><p>미술, 음악, 춤, 연극 등 다양한 예술을 경험하며 자신만의 생각과 느낌을 자유롭게 표현하는 힘을 키웁니다.</p></div>
+<div class="project-item"><div class="project-period">1·2월 | 💡</div><h4>지혜학교</h4><b>한 해의 배움을 삶의 지혜로 이어가요</b><p>한 해 동안의 경험을 돌아보고 감사와 배려를 나누며, 문제를 해결하고 새로운 일에 도전하는 과정 속에서 한 뼘 더 성장합니다.</p></div>
 </div>
-    <table class="character-table" aria-label="월별 인성놀이">
-      <thead><tr><th>월</th><th>품성</th><th>놀이 예시</th></tr></thead>
-      <tbody>
-        <tr><td>3월</td><td>경청</td><td>친구야 사랑해, 속닥속닥 전달게임, 황금알 찾기</td></tr>
-        <tr><td>4월</td><td>정돈</td><td>제자리 찾기, 마음정돈걸음, 친구와 함께 정리하기</td></tr>
-        <tr><td>5월</td><td>순종</td><td>순종미션, 모여라 미션줄서기, 무궁화 꽃이 피었습니다</td></tr>
-        <tr><td>6월</td><td>정직</td><td>정직의 발걸음, 분리수거 놀이, 정직의 보물을 찾아라</td></tr>
-        <tr><td>7월</td><td>인내</td><td>3분 동안 침묵, 마라톤, 풍선 참기</td></tr>
-        <tr><td>8월</td><td>긍정</td><td>긍정적인 선택게임, 친구에게 긍정의 말 전달하기</td></tr>
-        <tr><td>9월</td><td>책임감</td><td>약속 책임게임, 끝까지 정리하기</td></tr>
-        <tr><td>10월</td><td>감사</td><td>감사한 분께 그림편지, 감사의 말 전달하기</td></tr>
-        <tr><td>11월</td><td>절제</td><td>손잡고 공굴리기, 종이컵 블라인드 공, 협동 풍선놀이</td></tr>
-        <tr><td>12월</td><td>용서</td><td>다함께 대문놀이, 협동 훌라후프 넘기기, 한걸음 술래잡기</td></tr>
-        <tr><td>1월</td><td>경청</td><td>색깔 따라가기, 짝꿍과 가위바위보, 꼬리맞추기</td></tr>
-        <tr><td>2월</td><td>사랑</td><td>신문지 게임, 친구 데려오기, 스피드 전기게임</td></tr>
-      </tbody>
-    </table>
-    </div></section>
-
-
+</article>
+</div></section>
 <section class="program-section" id="programs">
-  <div class="head">
-    <span class="eyebrow">방과후 · 특성화 활동</span>
-    <h2>다양한 경험으로 꿈을 키웁니다</h2>
-    <p>다양한 경험 속에서 아이의 흥미와 강점을 발견하고<br>자신 있게 표현하는 힘을 키웁니다.</p>
-  </div>
-  <div class="program-grid"><article class="program-card">
-      <div class="program-photo"><img src="photo-09.jpg" alt="공동체 인성놀이 활동 사진"></div>
-      <div class="program-copy"><h3>공동체 인성놀이</h3><p>함께 어울리며 배려와 협력을 배우는 시간</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-10.jpg" alt="성악 활동 사진"></div>
-      <div class="program-copy"><h3>성악</h3><p>만 5세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-11.jpg" alt="영어 활동 사진"></div>
-      <div class="program-copy"><h3>영어</h3><p>만 3세 · 주 2회</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-12.jpg" alt="영어 활동 사진"></div>
-      <div class="program-copy"><h3>영어</h3><p>만 4·5세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-13.png" alt="유아체육 활동 사진"></div>
-      <div class="program-copy"><h3>유아체육</h3><p>만 3·4세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-14.jpg" alt="유아체육 활동 사진"></div>
-      <div class="program-copy"><h3>유아체육</h3><p>만 3·4세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-15.jpg" alt="유아체육 · 태권도 활동 사진"></div>
-      <div class="program-copy"><h3>유아체육 · 태권도</h3><p>만 5세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-16.jpg" alt="창의과학 활동 사진"></div>
-      <div class="program-copy"><h3>창의과학</h3><p>만 5세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-17.jpg" alt="창의레고 활동 사진"></div>
-      <div class="program-copy"><h3>창의레고</h3><p>만 3·4세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-18.jpg" alt="창의미술 활동 사진"></div>
-      <div class="program-copy"><h3>창의미술</h3><p>만 3·4세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-19.jpg" alt="함께하는 사회관계 놀이 활동 사진"></div>
-      <div class="program-copy"><h3>함께하는 사회관계 놀이</h3><p>규칙과 질서를 익히고 친구와 함께하는 방법을 배워요</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-20.png" alt="방과후 특강 장구수업 활동 사진"></div>
-      <div class="program-copy"><h3>방과후 특강 장구수업</h3><p>만 5세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-21.jpg" alt="케이넥스 활동 사진"></div>
-      <div class="program-copy"><h3>케이넥스</h3><p>만 3·4세</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-22.jpg" alt="발표력 쑥쑥 활동 사진"></div>
-      <div class="program-copy"><h3>발표력 쑥쑥</h3><p>자신의 생각을 자신 있게 표현해요</p></div>
-    </article><article class="program-card">
-      <div class="program-photo"><img src="photo-23.jpg" alt="손끝놀이 활동 사진"></div>
-      <div class="program-copy"><h3>손끝놀이</h3><p>소근육과 집중력을 키우는 즐거운 놀이</p></div>
-    </article></div>
+<div class="head">
+<span class="eyebrow">방과후 · 특성화 활동</span>
+<h2>다양한 경험으로 꿈을 키웁니다</h2>
+<p>다양한 경험 속에서 아이의 흥미와 강점을 발견하고<br/>자신 있게 표현하는 힘을 키웁니다.</p>
+</div>
+<div class="program-grid"><article class="program-card">
+<div class="program-photo"><img alt="공동체 인성놀이 활동 사진" src="photo-09.jpg"/></div>
+<div class="program-copy"><h3>공동체 인성놀이</h3><p>함께 어울리며 배려와 협력을 배우는 시간</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="성악 활동 사진" src="photo-10.jpg"/></div>
+<div class="program-copy"><h3>성악</h3><p>만 5세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="영어 활동 사진" src="photo-11.jpg"/></div>
+<div class="program-copy"><h3>영어</h3><p>만 3세 · 주 2회</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="영어 활동 사진" src="photo-12.jpg"/></div>
+<div class="program-copy"><h3>영어</h3><p>만 4·5세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="유아체육 활동 사진" src="photo-13.png"/></div>
+<div class="program-copy"><h3>유아체육</h3><p>만 3·4세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="유아체육 활동 사진" src="photo-14.jpg"/></div>
+<div class="program-copy"><h3>유아체육</h3><p>만 3·4세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="유아체육 · 태권도 활동 사진" src="photo-15.jpg"/></div>
+<div class="program-copy"><h3>유아체육 · 태권도</h3><p>만 5세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="창의과학 활동 사진" src="photo-16.jpg"/></div>
+<div class="program-copy"><h3>창의과학</h3><p>만 5세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="창의레고 활동 사진" src="photo-17.jpg"/></div>
+<div class="program-copy"><h3>창의레고</h3><p>만 3·4세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="창의미술 활동 사진" src="photo-18.jpg"/></div>
+<div class="program-copy"><h3>창의미술</h3><p>만 3·4세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="함께하는 사회관계 놀이 활동 사진" src="photo-19.jpg"/></div>
+<div class="program-copy"><h3>함께하는 사회관계 놀이</h3><p>규칙과 질서를 익히고 친구와 함께하는 방법을 배워요</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="케이넥스 활동 사진" src="photo-21.jpg"/></div>
+<div class="program-copy"><h3>케이넥스</h3><p>만 3·4세</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="발표력 쑥쑥 활동 사진" src="photo-22.jpg"/></div>
+<div class="program-copy"><h3>발표력 쑥쑥</h3><p>자신의 생각을 자신 있게 표현해요</p></div>
+</article><article class="program-card">
+<div class="program-photo"><img alt="손끝놀이 활동 사진" src="photo-23.jpg"/></div>
+<div class="program-copy"><h3>손끝놀이</h3><p>소근육과 집중력을 키우는 즐거운 놀이</p></div>
+</article></div>
 </section>
-
-
 <section id="experience">
-  <div class="wrap">
-    <div class="head">
-      <div class="kicker">EXPERIENCE</div>
-      <h2>놀고, 만나고, 경험하며 자랍니다</h2>
-      <p>몸과 마음, 자연과 예술이 연결되는 풍성한 유치원 생활</p>
-    </div>
-
-    <article class="experience-card">
-      <div class="experience-no">01</div>
-      <h3>보고, 느끼며 배우는 견학·체험활동</h3>
+<div class="wrap">
+<div class="head">
+<div class="kicker">EXPERIENCE</div>
+<h2>놀고, 만나고, 경험하며 자랍니다</h2>
+<p>몸과 마음, 자연과 예술이 연결되는 풍성한 유치원 생활</p>
+</div>
+<article class="experience-card">
+<div class="experience-no">01</div>
+<h3>보고, 느끼며 배우는 견학·체험활동</h3>
+<div class="exp-gallery"><figure class="exp-photo"><img alt="사물놀이(만5세)" src="photo-20.png"/><figcaption>사물놀이(만5세)</figcaption></figure>
+<figure class="exp-photo">
+<img alt="원더스카이 키즈카페" src="photo-24.jpg"/>
+<figcaption>원더스카이 키즈카페</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="아쿠아리움" src="photo-25.jpg"/>
+<figcaption>아쿠아리움</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="봄소풍-아기동물농장" src="photo-26.jpg"/>
+<figcaption>봄소풍-아기동물농장</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="봄소풍-아기동물농장" src="photo-27.jpg"/>
+<figcaption>봄소풍-아기동물농장</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="병원놀이" src="photo-28.jpg"/>
+<figcaption>병원놀이</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="딸기밭 체험" src="photo-29.jpg"/>
+<figcaption>딸기밭 체험</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="어버이날 축하공연" src="photo-30.jpg"/>
+<figcaption>어버이날 축하공연</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="애니멀스토리" src="photo-31.jpg"/>
+<figcaption>애니멀스토리</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="두부만들기 체험" src="photo-32.jpg"/>
+<figcaption>두부만들기 체험</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="유·초이음-초당초 견학" src="photo-36.jpg"/>
+<figcaption>유·초이음-초당초 견학</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="독서골든벨" src="photo-37.jpg"/>
+<figcaption>독서골든벨</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="발표력 수업" src="photo-38.jpg"/>
+<figcaption>발표력 수업</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="가을소풍(밧줄체험)" src="photo-39.jpg"/>
+<figcaption>가을소풍(밧줄체험)</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="가을소풍(밧줄체험)" src="photo-40.jpg"/>
+<figcaption>가을소풍(밧줄체험)</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="도서관 견학" src="photo-41.jpg"/>
+<figcaption>도서관 견학</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="사과따기 체험" src="photo-42.jpg"/>
+<figcaption>사과따기 체험</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="도자기 물레체험" src="photo-43.jpg"/>
+<figcaption>도자기 물레체험</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="어사화학교" src="photo-44.jpg"/>
+<figcaption>어사화학교</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="아르떼뮤지엄" src="photo-45.jpg"/>
+<figcaption>아르떼뮤지엄</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="시립미술관" src="photo-46.jpg"/>
+<figcaption>시립미술관</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="전통놀이" src="photo-47.jpg"/>
+<figcaption>전통놀이</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="참소리박물관" src="photo-48.jpg"/>
+<figcaption>참소리박물관</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="발표회" src="photo-49.jpg"/>
+<figcaption>발표회</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="졸업 추억만들기" src="photo-50.jpg"/>
+<figcaption>졸업 추억만들기</figcaption>
+</figure>
+<figure class="exp-photo">
+<img alt="학부모 참여수업" src="photo-33.jpg"/>
+<figcaption>학부모 참여수업</figcaption>
+</figure><figure class="exp-photo">
+<img alt="학부모 참여수업" src="photo-35.jpg"/>
+<figcaption>학부모 참여수업</figcaption>
+</figure></div>
+<p class="experience-intro">교실을 넘어 자연과 문화, 예술과 지역사회를 직접 만나며 아이들의 경험이 배움으로 이어집니다.</p>
+</article>
+<article class="experience-card">
+<div class="experience-no">02</div>
+<h3>함께 뛰고 웃는 숲가족활동</h3>
+<div class="exp-gallery">
+<figure class="exp-photo"><img alt="숲 가족활동" src="photo-51.jpg"/></figure>
+<figure class="exp-photo"><img alt="숲 가족활동" src="photo-52.jpg"/></figure>
+<figure class="exp-photo"><img alt="숲 가족활동" src="photo-53.jpg"/></figure>
+<figure class="exp-photo"><img alt="숲 가족활동" src="photo-54.jpg"/></figure>
+</div>
+</article>
+<article class="experience-card">
+<div class="experience-no">03</div>
+<h3>도전하며 성장하는 튼튼자람</h3><p class="experience-subtitle">매월 스포츠데이</p>
 <div class="exp-gallery">
 <figure class="exp-photo">
-      <img src="photo-24.jpg" alt="원더스카이 키즈카페">
-      <figcaption>원더스카이 키즈카페</figcaption>
-    </figure>
+<img alt="물놀이" src="photo-55.jpg"/>
+<figcaption>물놀이</figcaption>
+</figure>
 <figure class="exp-photo">
-      <img src="photo-25.jpg" alt="아쿠아리움">
-      <figcaption>아쿠아리움</figcaption>
-    </figure>
+<img alt="물총놀이" src="photo-56.jpg"/>
+<figcaption>물총놀이</figcaption>
+</figure>
 <figure class="exp-photo">
-      <img src="photo-26.jpg" alt="봄소풍-아기동물농장">
-      <figcaption>봄소풍-아기동물농장</figcaption>
-    </figure>
+<img alt="스케이트" src="photo-57.jpg"/>
+<figcaption>스케이트</figcaption>
+</figure>
 <figure class="exp-photo">
-      <img src="photo-27.jpg" alt="봄소풍-아기동물농장">
-      <figcaption>봄소풍-아기동물농장</figcaption>
-    </figure>
+<img alt="신체놀이" src="photo-58.jpg"/>
+<figcaption>신체놀이</figcaption>
+</figure>
 <figure class="exp-photo">
-      <img src="photo-28.jpg" alt="병원놀이">
-      <figcaption>병원놀이</figcaption>
-    </figure>
+<img alt="에어바운스" src="photo-60.jpg"/>
+<figcaption>에어바운스</figcaption>
+</figure>
 <figure class="exp-photo">
-      <img src="photo-29.jpg" alt="딸기밭 체험">
-      <figcaption>딸기밭 체험</figcaption>
-    </figure>
+<img alt="인라인 특강 (만 5세)" src="photo-61.jpg"/>
+<figcaption>인라인 특강 (만 5세)</figcaption>
+</figure>
 <figure class="exp-photo">
-      <img src="photo-30.jpg" alt="어버이날 축하공연">
-      <figcaption>어버이날 축하공연</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-31.jpg" alt="애니멀스토리">
-      <figcaption>애니멀스토리</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-32.jpg" alt="두부만들기 체험">
-      <figcaption>두부만들기 체험</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-33.jpg" alt="학부모 참여수업">
-      <figcaption>학부모 참여수업</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-34.jpg" alt="학부모 참여수업">
-      <figcaption>학부모 참여수업</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-35.jpg" alt="학부모 참여수업">
-      <figcaption>학부모 참여수업</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-36.jpg" alt="유·초이음-초당초 견학">
-      <figcaption>유·초이음-초당초 견학</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-37.jpg" alt="독서골든벨">
-      <figcaption>독서골든벨</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-38.jpg" alt="발표력 수업">
-      <figcaption>발표력 수업</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-39.jpg" alt="가을소풍">
-      <figcaption>가을소풍</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-40.jpg" alt="가을소풍">
-      <figcaption>가을소풍</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-41.jpg" alt="도서관 견학">
-      <figcaption>도서관 견학</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-42.jpg" alt="사과따기 체험">
-      <figcaption>사과따기 체험</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-43.jpg" alt="도자기 물레체험">
-      <figcaption>도자기 물레체험</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-44.jpg" alt="어사화학교">
-      <figcaption>어사화학교</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-45.jpg" alt="아르떼뮤지엄">
-      <figcaption>아르떼뮤지엄</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-46.jpg" alt="시립미술관">
-      <figcaption>시립미술관</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-47.jpg" alt="설날행사">
-      <figcaption>설날행사</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-48.jpg" alt="참소리박물관">
-      <figcaption>참소리박물관</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-49.jpg" alt="발표회">
-      <figcaption>발표회</figcaption>
-    </figure>
-<figure class="exp-photo">
-      <img src="photo-50.jpg" alt="졸업 추억만들기">
-      <figcaption>졸업 추억만들기</figcaption>
-    </figure>
-</div>
-      <p class="experience-intro">교실을 넘어 자연과 문화, 예술과 지역사회를 직접 만나며 아이들의 경험이 배움으로 이어집니다.</p>
-      
-    </article>
-
-    <article class="experience-card">
-      <div class="experience-no">02</div>
-      <h3>함께 뛰고 웃는 숲가족활동</h3>
-<div class="exp-gallery">
-<figure class="exp-photo"><img src="photo-51.jpg" alt="숲 가족활동"></figure>
-<figure class="exp-photo"><img src="photo-52.jpg" alt="숲 가족활동"></figure>
-<figure class="exp-photo"><img src="photo-53.jpg" alt="숲 가족활동"></figure>
-<figure class="exp-photo"><img src="photo-54.jpg" alt="숲 가족활동"></figure>
-</div>
-      
-    </article>
-
-    <article class="experience-card">
-      <div class="experience-no">03</div>
-      <h3>도전하며 성장하는 튼튼자람</h3>
-      <div class="exp-gallery">
-<figure class="exp-photo">
-                <img src="photo-55.jpg" alt="물놀이">
-                <figcaption>물놀이</figcaption>
-            </figure>
-<figure class="exp-photo">
-                <img src="photo-56.jpg" alt="물총놀이">
-                <figcaption>물총놀이</figcaption>
-            </figure>
-<figure class="exp-photo">
-                <img src="photo-57.jpg" alt="스케이트">
-                <figcaption>스케이트</figcaption>
-            </figure>
-<figure class="exp-photo">
-                <img src="photo-58.jpg" alt="신체놀이">
-                <figcaption>신체놀이</figcaption>
-            </figure>
-<figure class="exp-photo">
-                <img src="photo-59.jpg" alt="에어바운스">
-                <figcaption>에어바운스</figcaption>
-            </figure>
-<figure class="exp-photo">
-                <img src="photo-60.jpg" alt="에어바운스">
-                <figcaption>에어바운스</figcaption>
-            </figure>
-<figure class="exp-photo">
-                <img src="photo-61.jpg" alt="인라인 특강 (만 5세)">
-                <figcaption>인라인 특강 (만 5세)</figcaption>
-            </figure>
-<figure class="exp-photo">
-                <img src="photo-62.jpg" alt="인라인 특강 (만 5세)">
-                <figcaption>인라인 특강 (만 5세)</figcaption>
-            </figure>
-<figure class="exp-photo">
-                <img src="photo-63.jpg" alt="축구">
-                <figcaption>축구</figcaption>
-            </figure>
-</div>
-    </article>
-
-    <article class="experience-card">
-      <div class="experience-no">04</div>
-      <h3>자연과 함께하는 공동체놀이</h3>
-      <div class="exp-gallery"><figure class="exp-photo">
-                <img src="photo-64.jpg" alt="공동체놀이">
-            </figure><figure class="exp-photo">
-                <img src="photo-65.jpg" alt="공동체놀이">
-            </figure><figure class="exp-photo">
-                <img src="photo-66.jpg" alt="공동체놀이">
-            </figure></div>
-    </article>
-
-    <article class="experience-card">
-      <div class="experience-no">05</div>
-      <h3>심고 가꾸며 배우는 텃밭가꾸기</h3>
-      <div class="exp-gallery"><figure class="exp-photo">
-                <img src="photo-67.jpg" alt="감자심기">
-            </figure><figure class="exp-photo">
-                <img src="photo-68.jpg" alt="무">
-            </figure><figure class="exp-photo">
-                <img src="photo-69.jpg" alt="무">
-            </figure><figure class="exp-photo">
-                <img src="photo-70.jpg" alt="옥수수">
-            </figure></div>
-    </article>
-
-    <article class="experience-card">
-      <div class="experience-no">06</div>
-      <h3>상상이 펼쳐지는 모래놀이</h3>
-      <div class="exp-gallery"><figure class="exp-photo">
-                <img src="photo-71.jpg" alt="모래놀이">
-            </figure><figure class="exp-photo">
-                <img src="photo-72.jpg" alt="모래놀이">
-            </figure><figure class="exp-photo">
-                <img src="photo-73.jpg" alt="모래놀이">
-            </figure><figure class="exp-photo">
-                <img src="photo-74.jpg" alt="모래놀이">
-            </figure></div>
-    </article>
-
-    <article class="experience-card">
-      <div class="experience-no">07</div>
-      <div class="exp-gallery">
-<figure class="exp-photo">
-<img src="photo-75.jpg" alt="직접 만들고 맛보는 다온누리 활동">
+<img alt="축구" src="photo-63.jpg"/>
+<figcaption>축구</figcaption>
 </figure>
 </div>
+</article>
+<article class="experience-card">
+<div class="experience-no">04</div>
+<h3>자연과 함께하는 공동체놀이</h3><p class="experience-subtitle">꿈꾸미 문화놀이 · 토리탐험대 · 대관령 숲 체험</p>
+<div class="exp-gallery"><figure class="exp-photo">
+<img alt="공동체놀이" src="photo-64.jpg"/>
+</figure><figure class="exp-photo">
+<img alt="공동체놀이" src="photo-65.jpg"/>
+</figure><figure class="exp-photo">
+<img alt="공동체놀이" src="photo-66.jpg"/>
+</figure></div>
+</article>
+<article class="experience-card">
+<div class="experience-no">05</div>
+<h3>심고 가꾸며 배우는 텃밭가꾸기</h3>
+<div class="exp-gallery"><figure class="exp-photo">
+<img alt="감자심기" src="photo-67.jpg"/>
+</figure><figure class="exp-photo">
+<img alt="무" src="photo-68.jpg"/>
+</figure><figure class="exp-photo">
+<img alt="무" src="photo-69.jpg"/>
+</figure><figure class="exp-photo">
+<img alt="옥수수" src="photo-70.jpg"/>
+</figure></div>
+</article>
+<article class="experience-card">
+<div class="experience-no">06</div>
+<h3>상상이 펼쳐지는 모래놀이</h3>
+<div class="exp-gallery"><figure class="exp-photo">
+<img alt="모래놀이" src="photo-71.jpg"/>
+</figure><figure class="exp-photo">
+<img alt="모래놀이" src="photo-72.jpg"/>
+</figure><figure class="exp-photo">
+<img alt="모래놀이" src="photo-73.jpg"/>
+</figure><figure class="exp-photo">
+<img alt="모래놀이" src="photo-74.jpg"/>
+</figure></div>
+</article>
+<article class="experience-card">
+<div class="experience-no">07</div>
 <h3>직접 만들고 맛보는 다온누리</h3>
-    </article>
-
-    <article class="experience-card">
-      <div class="experience-no">08</div>
-      <h3>지구를 생각하는 환경교육</h3>
-      <div class="exp-gallery"><figure class="exp-photo">
-                <img src="photo-76.jpg" alt="물의 날">
-                <figcaption>물의 날</figcaption>
-            </figure><figure class="exp-photo">
-                <img src="photo-77.jpg" alt="세계 환경의 날">
-                <figcaption>세계 환경의 날</figcaption>
-            </figure><figure class="exp-photo">
-                <img src="photo-78.jpg" alt="생물 다양성 보존의 날">
-                <figcaption>생물 다양성 보존의 날</figcaption>
-            </figure><figure class="exp-photo">
-                <img src="photo-79.jpg" alt="지구의 날">
-                <figcaption>지구의 날</figcaption>
-            </figure><figure class="exp-photo">
-                <img src="photo-80.jpg" alt="지구의 날">
-                <figcaption>지구의 날</figcaption>
-            </figure></div>
-    </article>
-  </div>
+<div class="exp-gallery"><figure class="exp-photo"><img alt="다온누리 활동 1" src="daonnuri-01.jpg"/></figure><figure class="exp-photo"><img alt="다온누리 활동 2" src="daonnuri-02.jpg"/></figure><figure class="exp-photo"><img alt="다온누리 활동 3" src="daonnuri-03.jpg"/></figure><figure class="exp-photo"><img alt="다온누리 활동 4" src="daonnuri-04.jpg"/></figure></div>
+</article>
+<article class="experience-card">
+<div class="experience-no">08</div>
+<h3>지구를 생각하는 환경교육</h3>
+<div class="exp-gallery"><figure class="exp-photo">
+<img alt="물의 날" src="photo-76.jpg"/>
+<figcaption>물의 날</figcaption>
+</figure><figure class="exp-photo">
+<img alt="세계 환경의 날" src="photo-77.jpg"/>
+<figcaption>바다의 날</figcaption>
+</figure><figure class="exp-photo">
+<img alt="생물 다양성 보존의 날" src="photo-78.jpg"/>
+<figcaption>생물 다양성 보존의 날</figcaption>
+</figure><figure class="exp-photo">
+<img alt="지구의 날" src="photo-79.jpg"/>
+<figcaption>지구의 날</figcaption>
+</figure><figure class="exp-photo">
+<img alt="시장놀이" src="photo-80.jpg"/>
+<figcaption>세계 환경의 날 - 시장놀이</figcaption>
+</figure></div>
+</article>
+</div>
 </section>
-
-
-
-<section class="life" id="life"><div class="wrap lifeGrid"><div><div class="kicker">A HAPPY DAY</div><h2>좋은 교육만큼<br>중요한 것은<br>아이의 편안한 하루입니다.</h2><p>처음 문을 들어서는 순간부터 집으로 돌아갈 때까지, 아이가 안전하고 편안하게 생활하며 자기 힘으로 한 걸음씩 성장하도록 돕습니다.</p></div>
+<section class="life" id="life"><div class="wrap lifeGrid"><div><div class="kicker">A HAPPY DAY</div><h2>좋은 교육만큼<br/>중요한 것은<br/>아이의 편안한 하루입니다.</h2><p>처음 문을 들어서는 순간부터 집으로 돌아갈 때까지, 아이가 안전하고 편안하게 생활하며 자기 힘으로 한 걸음씩 성장하도록 돕습니다.</p></div>
 <div class="care"><div>🍚 즐거운 식사시간<small>건강한 식습관과 생활습관</small></div><div>🛡️ 안전한 생활<small>일상 속 안전교육과 세심한 돌봄</small></div><div>🧸 충분한 놀이<small>아이의 선택과 몰입을 존중하는 시간</small></div><div>🤝 따뜻한 관계<small>친구·교사와 신뢰를 쌓는 하루</small></div></div>
 </div></section>
-
-
-
 <section class="ending-final" id="visit">
-  <img class="ending-photo" src="photo-81.jpg" alt="강릉유치원 발표회 단체사진">
-  <div class="ending-text"><div class="ctaBox"><h2>우리 아이의 즐거운 유치원 생활,<br>강릉유치원에서 시작하세요.</h2><p>직접 둘러보고 이야기를 나누면 강릉유치원의 하루를 더 잘 느끼실 수 있습니다.</p><div class="buttons"><a class="btn primary" href="#">입학상담 예약하기</a><a class="btn secondary" href="#">전화로 문의하기</a><a class="btn secondary" href="#">오시는 길</a></div></div></div>
+<img alt="강릉유치원 발표회 단체사진" class="ending-photo" src="photo-81.jpg"/>
+<div class="ending-text"><div class="ctaBox"><h2>우리 아이의 즐거운 유치원 생활,<br/>강릉유치원에서 시작하세요.</h2><p>직접 둘러보고 이야기를 나누면 강릉유치원의 하루를 더 잘 느끼실 수 있습니다.</p><div class="buttons"><a class="btn primary" href="#">입학상담 예약하기</a><a class="btn secondary" href="#">전화로 문의하기</a><a class="btn secondary" href="#">오시는 길</a></div></div></div>
 </section>
 </main>
-<footer><div class="wrap">강릉유치원 · 2027학년도 원아모집 홈페이지 시안<br>※ 실제 사진, 상담예약 주소, 전화번호, 위치정보는 최종 자료에 맞춰 연결합니다.</div></footer>
+<footer><div class="wrap">강릉유치원 · 2027학년도 원아모집 홈페이지 시안<br/>※ 실제 사진, 상담예약 주소, 전화번호, 위치정보는 최종 자료에 맞춰 연결합니다.</div></footer>
 </body></html>
